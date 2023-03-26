@@ -1,0 +1,395 @@
+pt:
+  alert_mailer:
+    alert_mail:
+      subject: Alerta programadas em %{title}
+      heading: Alerta programadas em %{title}
+      subheading: Documentos que têm sido modificados.
+      modificacionesvigencia: Modificações de vigência
+      body_1: Consulte de novo o conteúdo e as modificações em
+      body_2: Esta recebendo este correio porque está cadastrado nas alerta a este
+        documento do site de %{title}. Se deseja descadastrar esta alerta, pulse
+        no seguinte enlace
+      body_3: Se deseja descadastrar seus alerta-as deste site, pulse no seguinte
+        enlace
+      lopd: Em cumprimento do disposto no REGULAMENTO (UE) 2016/679 DO PARLAMENTO
+        EUROPEU E DO CONSELHO de 27 de abril de 2016, informamos-lhe de que os dados
+        de contato utilizados para a presente comunicação serão incluídos em um arquivo
+        titularidade de EDITORIAL TIRANT O BLANCH S.L. com a finalidade de possibilitar
+        as comunicações através do correio eletrônico da mesma com os diferentes contatos
+        que esta mantém dentro do exercício de sua atividade. Sem prejuízo disso lhe
+        informa de que você poderá ejercitar os direitos de acesso, retificação,
+        cancelamento e oposição bem como os demais direitos que recolhe o citado regulamento,
+        para o qual deve ser dirigido a EDITORIAL TIRANT O BLANCH S.L. situado em
+        C/ ARTES GRÁFICAS, Nº 14 BAIXO (46010 VALENCIA) VALENCIA, anexando xerox do
+        documento acreditativo de identidade ou bem por correio eletrônico a lopd@tirant.com
+        <a href="mailto:lopd@tir=ant.com"></a>. Em virtude da lei 34/2002 de 11 de
+        Julio de Serviços da Sociedade da Informação e Correio Eletrônico (LSSI-CE),
+        esta mensagem e seus arquivos adjuntos podem conter informação confidencial,
+        pelo que se informa de que seu uso não autorizado está proibido pela lei.
+        Se tem recebido esta mensagem por engano, faz favor notifique-o imediatamente
+        através desta mesma via e apague a mensagem original junto com seus arquivos
+        adjuntos sem lê-lo ou gravá-lo total ou parcialmente.
+      alert_created_at: Data criação alerta
+  login:
+    exceptions:
+      invalid_ips: Acesso desde IP invalida
+      invalid_ticket: "Ticket invalido"
+      wrong_password: "Password incorreta"
+      invalid_user: Usuário não encontrado
+      username_required: "Username é requerido"
+      password_required: "Password é requerido"
+      invalid_referer: "Referer incorreto"
+      user_connections_is_zero: "Numero de conexões é zero"
+      user_exceed_max_connections: "Numero maximo de conexões atingidas %{max_conexiones}"
+      invalid_gmid: O usuário não tem atribuído o grupo de matérias
+      user_expired: "Subscripcion expirada"
+      invalid_ticket_auth_external: 'Falha ao obter ticket: external_username ou
+        external_e-mail incorretos'
+      unexpected_error: Erro inesperado
+      user_not_permissions: Usuário sem permissões
+  access_error:
+    tipo_error_acceso_id_1: IP Inválida
+    tipo_error_acceso_id_2: "Ticket inválido"
+    tipo_error_acceso_id_3: "Password errôneos"
+    tipo_error_acceso_id_4: Usuário não encontrado
+    tipo_error_acceso_id_5: "Referer incorreto"
+    tipo_error_acceso_id_6: Num.conexiones é zero
+    tipo_error_acceso_id_7: Num.maximo conexões atingido
+    tipo_error_acceso_id_8: Grupo matérias invalido
+    tipo_error_acceso_id_9: Assinatura expirada
+    tipo_error_acceso_id_10: "Ticket autenticação externa"
+    tipo_error_acceso_id_11: Erro inesperado
+  access_token:
+    email:
+      invalid: e-mail não é valido
+  email_common:
+    title: Chaves de acesso a
+    footer:
+      p1: 'ADVERTÊNCIA LEGAL:'
+      p2: De conformidade com o disposto na Lei Orgânica 15/1999, de 13 de dezembro,
+        de Proteção de Dados de Caráter Pessoal e na Lei 34/2002, de 11 de julho,
+        de Serviços da Sociedade da Informação e de Comércio Eletrônico, comunicamos-lhe
+        que os dados de caráter pessoal utilizados neste envio estão incluídos no
+        arquivo "CLIENTES-PROVEDORES" cuja titularidade ostenta EDITORIAL TIRANT
+        O BLANCH S.L. pode exercer seus direitos de acesso, retificação, cancelamento
+        e oposição mediante comunicação escrita a RUA ARTES GRAFICAS, Nº 14 BAIXO,
+        46010, VALENCIA na direção indicada ou no correio eletrônico remitente.
+      p3: Notificamos-lhe que esta mensagem vai dirigido exclusivamente à pessoa designada
+        como destinatário e que a informação que contém é confidencial. Se você tem
+        recebido esta mensagem por erro lhe rogamos o comunique mediante correio eletrônico
+        remetido a nossa atenção e proceda a sua eliminação bem como à de qualquer
+        documento anexo ao mesmo, ficando proibida qualquer divulgação, distribuição
+        ou cópia do mesmo.
+      p4: O consumo de papel é perjudicial para o meio ambiente. Faz favor tenha-o
+        em conta dantes de plotar esta mensagem.
+      lopd1: Em cumprimento do disposto no REGULAMENTO (UE) 2016/679 DO PARLAMENTO
+        EUROPEU E DO CONSELHO de 27 de abril de 2016, informamos-lhe de que os dados
+        de contato utilizados para a presente comunicação serão incluídos em um arquivo
+        titularidade de EDITORIAL TIRANT O BLANCH S.L. com a finalidade de possibilitar
+        as comunicações através do correio eletrônico da mesma com os diferentes contatos
+        que esta mantém dentro do exercício de sua atividade. Sem prejuízo disso lhe
+        informa de que você poderá ejercitar os direitos de acesso, retificação,
+        cancelamento e oposição bem como os demais direitos que recolhe o citado regulamento,
+        para o qual deve ser dirigido a EDITORIAL TIRANT O BLANCH S.L. situado em
+        C/ ARTES GRÁFICAS, Nº 14 BAIXO (46010 VALENCIA) VALENCIA, anexando xerox do
+        documento acreditativo de identidade ou bem por correio eletrônico a
+      lopd2: Em virtude da lei 34/2002 de 11 de Julio de Serviços da Sociedade da
+        Informação e Correio Eletrônico (LSSI-CE), esta mensagem e seus arquivos
+        adjuntos podem conter informação confidencial, pelo que se informa de que
+        seu uso não autorizado está proibido pela lei. Se tem recebido esta mensagem
+        por engano, faz favor notifique-o imediatamente através desta mesma via e
+        apague a mensagem original junto com seus arquivos adjuntos sem lê-lo ou gravá-lo
+        total ou parcialmente.
+  email_sub_passwd:
+    p1: "Caro usuário:"
+    p2: "Abaixo você tem seus dados de acesso para"
+    p3: "Acessar página:"
+    p4: "Usuário:"
+    p5: "Acesse o seguinte link para atualizar sua senha e ativar sua conta:"
+    p6: "Este link é válido por 24 horas"
+    p7: "Atenciosamente"
+    p8: "Dpto. Atenção ao Cliente"
+  email_user_passwd:
+    p1: 'Caro usuário:'
+    p2: 'A seguir dispõe de seus dados de acesso para'
+    p3: 'Página de acesso:'
+    p4: 'Usuário:'
+    p5: 'Senha:'
+    p6: 'Faz favor, respeite as maiúsculas e minúsculas.'
+    p7: 'Atenciosamente'
+    p8: 'Dpto. Atenção ao Cliente'
+  email_data_full:
+    p1: 'Estimado/a usuário/a:'
+    p2: 'Queremos agradecer-lhe sua confiança ao adquirir nosso #banco# de dados jurídico'
+    p2_1: Nossa vontade é proporcionar-lhe um serviço excelente e para isso precisamos
+      confirmar os dados que fazem em nosso poder para que, em caso de detectar alguma
+      anomalía, poder os reparar desde o primeiro momento.
+    p3: 'Nomeie/Razão social:'
+    p4: "CIF/NIF:"
+    p5: 'Pessoa de contato:'
+    p6: 'Direção:'
+    p7: 'População:'
+    p8: 'Código Postal:'
+    p9: 'Email:'
+    p10: 'Telefone:'
+    p11: 'Fax:'
+    p12: 'Produto contratado:'
+    p12_1: "#Banco# de dados Jurídico"
+    p13: Consultoria
+    p14: 'A chave de acesso que lhe atribuímos é a seguinte:'
+    p15: 'Usuário:'
+    p16: "(A chave é sensível a maiúsculas e minúsculas)"
+    p17: "Senha:"
+    p18: 'Para aceder ao banco de dados simplesmente deve:'
+    p19: Aceder através da página
+    p20: Situar-se no apartado de Acesso Usuário.
+    p21: O sistema lhes solicitará o usuário e a senha que lhe proporcionámos neste
+      mesmo correio.
+    p22: O programa validará a chave e lhe dará acesso imediato ao banco de dados.
+    p23: Recordamos-lhe que com esta chave pode ser acedido ao banco de dados com
+      independência do computador desde o que se esteja trabalhando.
+    p24: Indicamos-lhe também seu usuário de personalização que lhe permitirá guardar
+      documentos, índices, buscas, formulários e gerenciar seus alerta sobre Convênios
+      Coletivos, ajudas e subvenções. Ademais receberá o boletim de novidades semanal.
+    p25: Por último, lhe agradeceríamos que nos remetesse uma mensagem de acuse de
+      recebo para confirmar a recepção deste mail e, em caso necessário, completar
+      ou corrigir os dados que lhe remetemos.
+    p26: Atenciosamente,
+    p27: "Dpto. Atenção ao Cliente"
+    p28: 'Correio eletrônico:'
+    p29: "Link de criação de senha"
+    call_for_support: 'Ante qualquer problema não duvide em se pôr em contato connosco
+      em nosso telefone de atenção ao cliente 902.121.255. Este número está operativo
+      de 8 a 20 horas os 7 dias da semana. De todas formas, em breve, e se não tem
+      inconveniente, nos poremos em contato com você para confirmar que o funcionamento
+      do #banco# de dados é satisfatório e poder solventarle as dúvidas de utilização
+      ou de qualquer outro tipo que ainda pudesse ter.'
+    customer_support: "Dpto. Atenção ao cliente"
+    phone: "Telf."
+    email: Correio eletrônico
+  email_user_passwd_token:
+    p1: Acabamos de receber sua solicitação para cadastrar no serviço de personalização
+      de Tirant On-line com esta direção de correio eletrônico.
+    p2: 'Para confirmar sua petição deve fincar sobre o seguinte link:'
+    p3: Se o sistema falha pode copiar o link, colar na barra de direções de seu navegador
+      e pulsar intro. Clicando sobre o link anterior, você nos autoriza a poder guardar
+      sua direção de correio em nosso banco de dados.
+    p4: Esta é a direção que utilizaremos para lhe remeter nosso boletim semanal de
+      novidades e ao que você poderá remeter de forma automática toda a documentação
+      que deseje desde a página de Tirant On-line.
+  email_user_share_document:
+    subject: "Documento %s Compartilhado por %s"
+    link_info: "Clique no link a seguir para baixar o documento compartilhado:"
+  materia:
+    esp:
+      '1': Trabalhista
+      '2': P.horizontal e arrendamentos
+      '3': Financeiro e Tributário
+      '4': Contabilidade e auditoria
+      '5': Mercantil
+      '6': "Extranjería"
+      '7': Separação e Divórcio
+      '8': Urbanismo e edificación
+      '9': "Concursal"
+      '10': Execução penal e penitenciária
+      '13': Zona Notarial
+      '14': Trabalhista e gerenciamento de pessoal
+      '16': Direção econômico-financeira
+      '17': Direção de produção
+      '18': Marketing e comunicação
+      '19': Jurídico
+      '21': Penal
+      '22': Contratos
+      '23': Universidade
+      '24': Arrendamentos urbanos
+      '25': Propriedade Horizontal
+      '26': Direito de Família
+      '27': Tráfico e indenizações
+  user_presubscription:
+    errors:
+      perusuid:
+        exists: "%{e-mail} já esta cadastrado em personalização"
+        many_exist: 'Os seguintes e-mails já estão cadastrados em personalização:'
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: deve ser aceite
+      blank: não pode estar em alvo
+      present: deve estar em alvo
+      confirmation: não coincide
+      empty: não pode estar vazio
+      equal_to: deve ser igual a %{count}
+      even: deve ser par
+      exclusion: está reservado
+      greater_than: deve ser maior que %{count}
+      greater_than_or_equal_to: deve ser maior que ou igual a %{count}
+      inclusion: não está incluído na lista
+      invalid: não é válido
+      less_than: deve ser menor que %{count}
+      less_than_or_equal_to: deve ser menor que ou igual a %{count}
+      model_invalid: 'A validação falhou: %{errors}'
+      not_a_number: não é um número
+      not_an_integer: deve ser um inteiro
+      odd: deve ser ímpar
+      required: deve existir
+      taken: já está em uso
+      too_long:
+        one: é demasiado longo (1 caráter máximo)
+        other: é demasiado longo (%{count} carateres máximo)
+      too_short:
+        one: é demasiado curto (1 caráter mínimo)
+        other: é demasiado curto (%{count} carateres mínimo)
+      wrong_length:
+        one: não tem a longitude correta (1 caráter exatos)
+        other: não tem a longitude correta (%{count} carateres exatos)
+      other_than: deve ser diferente de %{count}
+      validations:
+        message: "Errors de Validação sobre %{document}"
+        summary: |-
+          Erros:
+              %{errors}
+        resolution: "Check the instances for this model looking for missing
+          fields or wrong avalie."
+  activemodel:
+    errors:
+      format: "%{attribute} %{message}"
+      messages:
+        accepted: deve ser aceite
+        blank: não pode estar em alvo
+        present: deve estar em alvo
+        confirmation: não coincide
+        empty: não pode estar vazio
+        equal_to: deve ser igual a %{count}
+        even: deve ser par
+        exclusion: está reservado
+        greater_than: deve ser maior que %{count}
+        greater_than_or_equal_to: deve ser maior que ou igual a %{count}
+        inclusion: não está incluído na lista
+        invalid: não é válido
+        less_than: deve ser menor que %{count}
+        less_than_or_equal_to: deve ser menor que ou igual a %{count}
+        model_invalid: 'A validação falhou: %{errors}'
+        not_a_number: não é um número
+        not_an_integer: deve ser um inteiro
+        odd: deve ser ímpar
+        required: deve existir
+        taken: já está em uso
+        too_long:
+          one: é demasiado longo (1 caráter máximo)
+          other: é demasiado longo (%{count} carateres máximo)
+        too_short:
+          one: é demasiado curto (1 caráter mínimo)
+          other: é demasiado curto (%{count} carateres mínimo)
+        wrong_length:
+          one: não tem a longitude correta (1 caráter exatos)
+          other: não tem a longitude correta (%{count} carateres exatos)
+        other_than: deve ser diferente de %{count}
+        validations:
+          message: "Errors de Validação sobre %{document}"
+          summary: |-
+            Erros:
+                %{errors}
+          resolution: "Check the instances for this model looking for missing
+            fields or wrong avalie."
+  mongoid:
+    errors:
+      format: "%{attribute} %{message}"
+      messages:
+        accepted: deve ser aceite
+        blank: não pode estar em alvo
+        present: deve estar em alvo
+        confirmation: não coincide
+        empty: não pode estar vazio
+        equal_to: deve ser igual a %{count}
+        even: deve ser par
+        exclusion: está reservado
+        greater_than: deve ser maior que %{count}
+        greater_than_or_equal_to: deve ser maior que ou igual a %{count}
+        inclusion: não está incluído na lista
+        invalid: não é válido
+        less_than: deve ser menor que %{count}
+        less_than_or_equal_to: deve ser menor que ou igual a %{count}
+        model_invalid: 'A validação falhou: %{errors}'
+        not_a_number: não é um número
+        not_an_integer: deve ser um inteiro
+        odd: deve ser ímpar
+        required: deve existir
+        taken: já está em uso
+        too_long:
+          one: é demasiado longo (1 caráter máximo)
+          other: é demasiado longo (%{count} carateres máximo)
+        too_short:
+          one: é demasiado curto (1 caráter mínimo)
+          other: é demasiado curto (%{count} carateres mínimo)
+        wrong_length:
+          one: não tem a longitude correta (1 caráter exatos)
+          other: não tem a longitude correta (%{count} carateres exatos)
+        other_than: deve ser diferente de %{count}
+        validations:
+          message: "Errors de Validação sobre %{document}"
+          summary: |-
+            Erros:
+                %{errors}
+          resolution: "Check the instances for this model looking for missing
+            fields or wrong avalie."
+    attributes:
+      esp/user_subscription_assumption:
+        title: Título
+        user_subscription_case_id: Caso
+  activerecord:
+    attributes:
+      esp/user_subscription:
+        perusuid: e-mail
+      mex/user_subscription:
+        perusuid: e-mail
+      latam/user_subscription:
+        perusuid: e-mail
+    errors:
+      messages:
+        record_invalid: 'Erros de validação: %{errors}'
+  user_subscription_login:
+    errors:
+      desactivado: Este Usuário tem sido desativado
+      invalid: Usuário ou password incorreto
+      invalid_session: A session é invalida
+      not_an_integer: tem de ser um inteiro
+      odd: tem de ser ímpar
+      other_than: tem de ser diferente de %{count}
+      present: não pode estar em branco
+      required: é obrigatório
+      taken: não está disponível
+      too_long: é demasiado grande (o máximo é de %{count} caracteres)
+      too_short: é demasiado pequeno (o mínimo é de %{count} caracteres)
+      wrong_length: comprimento errado (deve ter %{count} caracteres)
+
+  canaltirant:
+    editorial: Editorial Tirant
+    derecho: Libreria jurídica
+    libreria: Libreria Tirant
+    humanidades: Tirant Humanidades
+    libmex: Tirant México
+    tol: Tirant Online
+    formacion: Tirant Formación
+    tase: Tirant Asesores
+    emp: Tirant Empresas
+    tnr: Tirant Notarios
+    immobiliario: Tirant PH
+    biblioteca: Biblioteca Virtual
+    corporativa: Tirant Corporativa
+    nubedelectura: Nube de Lectura
+    tph: Tirant P. Horizontal
+    tolmex: Tirant Online México
+    conmex: Tirant Contadores
+    latam: Tirant Online Latam
+    analytics: Tirant Analytics
+    teoriayderecho: Teoría y Derecho
+    formacionmexico: Formación México
+    formacionbrasil: Formación Brasil
+    bvbrasil: Biblioteca Virtual Brasil
+    libchl: Tirant Chile
+    libcol: Tirant Colombia
+    compliancers: Tirant Compliancers
+    libbra: Tirant Brasil
+    col: Tirant Online Colombia
+    chl: Tirant Online Chile
+    per: Tirant Online Perú

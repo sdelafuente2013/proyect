@@ -1,0 +1,26 @@
+ca:
+  lopd:
+    top:
+      - "Conforme al Reglament (UE) 2016/679 i a la Llei Orgánica 3/2018, de 5 de decembre de
+        Protecció de Dades Personals i garantía dels drets digitals, l'informem de que les seves
+        dades personals pasaran a formar part d'un fixer denominat CLIENTS I/O PROVEÍDORS
+        titularitat d'EDITORIAL TIRANT LO BLANCH S.L. amb CIF B46091179."
+      - "Les dades es recullen amb la finalitat de gestionar adequadament la informació dels clients
+        i/o proveïdors contable, fiscal i administrativament així com la publicitat i prospecció
+        comercial. Aquestos es conservaran mentre no es solicite la supressió per l'interesat i
+        podran ser cedits i/o comunicats a colaboradors/tercers amb la finalitat de resoldre i
+        asolir les seves necesitats, així com per oferir-los serveis relacionats, publicitat i
+        prospecció comercial."
+    bottom:
+      - "Al mateix l'informem de que en qualsevol moment pot exercir els seus drets d'accés,
+        rectificació, supresió, portabilitat, limitació u oposició al tractament de les seves dades,
+        així com retirar el consentiment concedit o formular reclamacions davant l'Autoridad de
+        Control. Aquestes accions podran exercir-se enviant la sol·licitud per correu postal a
+        C/ ARTES GRÁFICAS, Nº 14 BAJO (46010 VALENCIA) o be a la següent adreça de correu electrònic
+        <a href='mailto:dpo@tirant.com?subject=Protección de datos'>dpo@tirant.com</a> sota
+        l'assumpte de refèrencia \"<a href='mailto:dpo@tirant.com?subject=Protección de datos'>
+        Protección de Datos</a>\"."
+    actions:
+      main: "Tendeixo i accepto les condicions de Tirant lo Blanch segons la LOPD actual"
+      commercial: "Si autoritzo el tractament de les meves dades de contacte per a l'enviament de comunicacions comercials"
+      personal_data: "Si autoritzo la comunicaci&oacute; de les meves dades a la resta d'empreses del grup"

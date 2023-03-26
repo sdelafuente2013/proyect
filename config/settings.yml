@@ -1,0 +1,101 @@
+user_session:
+  max_inactive_interval: 120
+
+mailers:
+  logo:
+    esp: "https://editorial.tirant.com/mailing/logos/logo_tol.png"
+    mex: "https://editorial.tirant.com/mailing/logos/logo_tolmex.png"
+    latam: "https://editorial.tirant.com/mailing/logos/logo_latam.png"
+    conmex: "https://contadores.tirantonline.com.mx/base/assets/conmex/logo_contadores.png"
+
+  tirant_address:
+    esp: Editorial Tirant lo Blanch<br/>
+      Artes Gráficas, 14, entlo. <br/>
+      46010 - Valencia<br/>
+
+    mex: Editorial Tirant lo Blanch<br/>
+      Calle Río Tíber 66<br/>
+      Colonia Cuauhtémoc<br/>
+      Delegación Cuauhtémoc<br/>
+      CP 06500 MÉXICO D.F.
+
+    latam: Editorial Tirant lo Blanch<br/>
+      Artes Gráficas, 14, entlo. <br/>
+      46010 - Valencia<br/>
+
+  tirant_phone:
+    esp: 902 121 255
+    mex: (55) 65502317
+    latam:
+
+  tirant_mail_atencion:
+    esp:
+      default: atencionalcliente@tirantonline.com
+    mex:
+      default: atencion.tolmex@tirantonline.com.mx
+      conmex: atencion.tirantcontadores@tirantonline.com.mx
+    latam:
+      default: atencion.latam@tirantonline.com
+
+canaltirant:
+  - code: "tol"
+    url: "https://www.tirantonline.com"
+  - code: "tase"
+    url: "https://www.tirantasesores.com"
+  - code: "tnr"
+    url: "https://notariado.tirant.com"
+  - code: "tph"
+    url: "https://propiedadhorizontal.tirant.com"
+  - code: "tolmex"
+    url: "https://www.tirantonline.com.mx"
+  - code: "conmex"
+    url: "https://contadores.tirantonline.com.mx"
+  - code: "latam"
+    url: "https://latam.tirantonline.com"
+  - code: "chl"
+    url: "https://www.tirantonline.cl"
+  - code: "per"
+    url: "https://palestra.tirantonline.com"
+  - code: "col"
+    url: "https://www.tirantonline.com.co"
+  - code: "analytics"
+    url: "https://analytics.tirant.com"
+
+subid_to_appname:
+  latam:
+    0: "latam"
+    3: "arg"
+    4: "slv"
+    5: "col"
+    6: "per"
+    7: "chl"
+    8: "bra"
+    9: "pan"
+    10: "ven"
+    11: "bol"
+    12: "cri"
+    13: "ecu"
+    14: "gtm"
+    15: "hnd"
+    16: "jam"
+    17: "pry"
+    18: "dom"
+    19: "tto"
+    20: "ury"
+    21: "prt"
+    24: "nic"
+  esp:
+    0: "tol"
+    1: "tnr"
+    2: "tase"
+    3: "tph"
+    4: "analytics"
+    5: "icab"
+    6: "cyl"
+  mex:
+    0: "tolmex"
+    1: "conmex"
+
+lang_to_locale:
+  cat: "ca"
+  esp: "es"

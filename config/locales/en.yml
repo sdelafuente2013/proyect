@@ -1,0 +1,54 @@
+en:
+  hello: "Hello world"
+  email_sub_passwd:
+    p1: "Dear user:"
+    p2: "Below you have your access data for"
+    p3: "Access page:"
+    p4: "User:"
+    p5: "Access the following link to update your password and activate your account:"
+    p6: "This link is valid for 24 hours"
+    p7: "Sincerely"
+    p8: "Customer Service Department"
+  canaltirant:
+    editorial: Editorial Tirant
+    derecho: Libreria jurídica
+    libreria: Libreria Tirant
+    humanidades: Tirant Humanidades
+    libmex: Tirant México
+    tol: Tirant Online
+    formacion: Tirant Formación
+    tase: Tirant Asesores
+    emp: Tirant Empresas
+    tnr: Tirant Notarios
+    immobiliario: Tirant PH
+    biblioteca: Biblioteca Virtual
+    corporativa: Tirant Corporativa
+    nubedelectura: Nube de Lectura
+    tph: Tirant P. Horizontal
+    tolmex: Tirant Online México
+    conmex: Tirant Contadores
+    latam: Tirant Online Latam
+    analytics: Tirant Analytics
+    teoriayderecho: Teoría y Derecho
+    formacionmexico: Formación México
+    formacionbrasil: Formación Brasil
+    bvbrasil: Biblioteca Virtual Brasil
+    libchl: Tirant Chile
+    libcol: Tirant Colombia
+    compliancers: Tirant Compliancers
+    libbra: Tirant Brasil
+    col: Tirant Online Colombia
+    chl: Tirant Online Chile
+    per: Tirant Online Perú
+  user_presubscription:
+    errors:
+      perusuid:
+        exists: "%{email} it is already registered in personalization"
+        many_exist: "The following emails are already registered in personalization: "
+        password_blanks: "Password cannot contain blank characters."
+  user_subscription_calendars:
+    errors:
+      last_calendar: "Can't delete your only calendar"
+  user_ip:
+    errors:
+      format: 'The fields from the same ip should use the same format (ipv4 or ipv6)'

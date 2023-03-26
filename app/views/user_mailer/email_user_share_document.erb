@@ -1,0 +1,12 @@
+<p style="margin-bottom: 0cm">
+
+  <% if @extra_params['text'] %>
+    <% @extra_params['text'].split("\n").each do |line| %>
+      <p><%= line %></p>
+    <% end %>
+  <% end %>
+
+  <p><%= I18n.t("email_user_share_document.link_info") %></p>
+  <p><%= @extra_params['doc_url'] %></p>
+
+</p>

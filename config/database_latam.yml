@@ -1,0 +1,73 @@
+# DEFAULTS
+default: &default
+  adapter: mysql2
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  port: 3306
+  encoding: utf8
+
+  connect_timeout: 2
+  connect_attrs:
+    program_name: 'xt-toluserapi'
+  reconnect: true
+
+makara: &makara
+  blacklist_duration: 5
+  master_ttl: 10
+  master_strategy: failover
+  sticky: true
+  connection_error_matchers:
+    - !ruby/regexp '/^ActiveRecord::StatementInvalid: Mysql2::Error: Unknown command:/'
+    - '/Sql Server Has Gone Away/'
+    - 'Mysql2::Error: Duplicate entry'
+
+development: &development
+  <<: *default
+  adapter: 'mysql2' #'mysql2_makara'
+  username: <%= ENV['dev_db_latam_user'] %>
+  password: <%= ENV['dev_db_latam_pass'] %>
+  host: <%= ENV['dev_db_latam_host'] %>
+  database: <%= ENV['dev_db_latam_name'] %>
+  port: <%= ENV['dev_db_latam_port'] || 3306 %>
+  pool: 5
+
+staging: &staging
+  <<: *default
+  adapter: 'mysql2_makara'
+  username: <%= ENV['staging_db_latam_user'] %>
+  password: <%= ENV['staging_db_latam_pass'] %>
+  host: <%= ENV['staging_db_latam_host'] %>
+  database: <%= ENV['staging_db_latam_name'] %>
+  port: 3306
+  pool: 5
+  makara:
+    <<: *makara
+    connections:
+      - role: master
+        host: <%= ENV["staging_db_latam_host_master"] %>
+      - role: slave
+        host: <%= ENV["staging_db_latam_host_slave"] %>
+
+production: &production
+  <<: *default
+  adapter: 'mysql2_makara'
+  database: <%= ENV['prod_db_latam_name'] %>
+  username: <%= ENV['prod_db_latam_user'] %>
+  password: <%= ENV['prod_db_latam_pass'] %>
+  host: <%= nearest_ping_host "#{ENV['prod_db_latam_hosts']}".split(",") %>
+  pool: <%= api_pool_size %>
+  makara:
+    <<: *makara
+    connections:
+      - role: master
+        host: <%= nearest_ping_host "#{ENV['prod_db_latam_hosts']}".split(",") %>
+      - role: slave
+        host: <%= nearest_ping_host "#{ENV['prod_db_latam_slaves']}".split(",") %>
+
+test:
+  adapter: mysql2
+  username: <%= ENV['test_db_latam_user'] %>
+  password: <%= ENV['test_db_latam_pass'] %>
+  host: <%= ENV['test_db_latam_host'] %>
+  database: <%= ENV['test_db_latam_name'] %>
+  port: <%= ENV['test_db_latam_port'] || 3306 %>
+

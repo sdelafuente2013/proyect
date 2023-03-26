@@ -1,0 +1,17 @@
+es:
+  user_subscription_mailer:
+    request_password_recovery:
+      subject: "Petición de recuperación de contraseña"
+      greeting: "Hola %{nombre}"
+      text1: "Hemos recibido una solicitud de cambio de contraseña. Puedes confirmarla pulsando en el siguiente enlace."
+      text2: "Si no has solicitado este cambio, puedes ignorar este email."
+      text3: "Tu contraseña no se cambiará hasta que accedas al enlace de arriba e introduzcas una nueva."
+      text4: "Este enlace tiene una validez de 24 horas."
+      
+    confirm_update_email:
+      subject: "Petición de actualización de correo"
+      greeting: "Hola %{nombre}"
+      text1: "Hemos recibido una solicitud de cambio de correo electrónico. Puedes confirmarla pulsando en el siguiente enlace."
+      link_text: "Confirmar cambio de correo"
+      text2: "Si no has solicitado este cambio, puedes ignorar este email."
+      text3: "Tu correo no se cambiará hasta que accedas al enlace de arriba e introduzcas uno nuevo."

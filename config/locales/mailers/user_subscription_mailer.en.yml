@@ -1,0 +1,18 @@
+en:
+  user_subscription_mailer:
+    request_password_recovery:
+      subject: "Password recovery request"
+      greeting: "Hello %{nombre}"
+      text1: "We've received a password change request from your account. You can confirm it by clicking on the link below."
+      text2: "If you did not make this request, you are free to ignore this email."
+      text3: "Your password will not be changed until you access the link above and provide a new one."
+      text4: "This link will expire in 24 hours."
+
+    confirm_update_email:
+      subject: "Request to update email"
+      greeting: "Hello %{nombre}"
+      text1: "We've received an email change request from your account. You can confirm it by clicking on the link below."
+      link_text: "Confirm email change"
+      text2: "If you did not make this request, you are free to ignore this email."
+      text3: "Your email will not be changed until you access the link above and provide a new one."
+

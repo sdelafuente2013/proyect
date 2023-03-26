@@ -1,0 +1,45 @@
+<%= I18n.t("email_data_full.p1") %>
+===============================================
+<%= I18n.t("email_data_full.p2") %> <%= @subsystem.name %>. <%= I18n.t("email_data_full.p2_1") %>
+
+<%= I18n.t("email_data_full.p3") %> <%=@user.nombre%>
+<%= I18n.t("email_data_full.p4") %> <%=@user.nif%>
+<%= I18n.t("email_data_full.p5") %> <%=@user.persona_contacto%>
+<%= I18n.t("email_data_full.p6") %> <%=@user.direccion%>
+<%= I18n.t("email_data_full.p7") %> <%=@user.poblacion%>
+<%= I18n.t("email_data_full.p8") %> <%=@user.cp%>
+<%= I18n.t("email_data_full.p9") %> <%=@user.email%>
+<%= I18n.t("email_data_full.p10") %> <%=@user.telefono%>
+<%= I18n.t("email_data_full.p11") %> <%=@user.fax%>
+<%= I18n.t("email_data_full.p12") %> <%=@subsystem.name%>
+
+<% if @user.is_premium? %>
+Premium
+<% elsif @user.has_consultoria? %>
+ + <%= I18n.t("email_data_full.p13") %>
+<% end %>
+
+<%= I18n.t("email_data_full.p14") %>
+<%= I18n.t("email_data_full.p15") %> <%= @user.username %>
+<%= I18n.t("email_data_full.p16") %>
+<%= I18n.t("email_data_full.p17") %> <%= @user.password %>
+<%= I18n.t("email_data_full.p18") %>
+<%= I18n.t("email_data_full.p19") %> <%= @subsystem.url %>
+<%= I18n.t("email_data_full.p20") %>
+<%= I18n.t("email_data_full.p21") %>
+<%= I18n.t("email_data_full.p22") %>
+<%= I18n.t("email_data_full.p23") %>
+
+<%= I18n.t("email_data_full.p24") %>
+
+<% unless @user_subscription.nil? %>
+<%= I18n.t("email_data_full.p15") %> user_subscription.perusuid
+<%= I18n.t("email_data_full.p17") %> user_subscription.password
+<% end %>
+
+<%= I18n.t("email_data_full.p25") %>
+
+<%= I18n.t("email_data_full.p26") %>
+
+<%= I18n.t("email_data_full.p27") %>
+<%= I18n.t("email_data_full.p28") %>

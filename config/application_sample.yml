@@ -1,0 +1,166 @@
+# This is a sample file for configuration of test and development databases.
+# Save this file as "application.yml" and update configuration parameters below.
+#
+# More info on file format: https://github.com/laserlemon/figaro
+
+# DEV
+dev_db_host: "joanot2.tirant.net"
+dev_db_user: "tolpro"
+dev_db_pass: "ayatola"
+dev_db_name: "tolpro"
+dev_db_port: "3306"
+dev_db_host_master: "joanot2.tirant.net"
+dev_db_host_slave: "martorell.tirant.net"
+
+dev_db_latam_host: "joanot2.tirant.net"
+dev_db_latam_user: "latam"
+dev_db_latam_pass: "Netanyahu"
+dev_db_latam_name: "latam_frontend_dev"
+dev_db_latam_port: "3306"
+dev_db_latam_host_master: "joanot2.tirant.net"
+dev_db_latam_host_slave: "martorell.tirant.net"
+
+dev_db_mexico_host: "joanot2.tirant.net"
+dev_db_mexico_user: "tolmex"
+dev_db_mexico_pass: "tolmex,47"
+dev_db_mexico_name: "tolmex_frontend"
+dev_db_mexico_port: "3306"
+dev_db_mexico_host_master: "joanot2.tirant.net"
+dev_db_mexico_host_slave: "martorell.tirant.net"
+
+dev_db_tirantid_host: "joanot2.tirant.net"
+dev_db_tirantid_user: "tirant"
+dev_db_tirantid_pass: "trnt,47"
+dev_db_tirantid_name: "tirantid"
+dev_db_tirantid_port: "3306"
+
+dev_mongo_host: "localhost"
+dev_mongo_latam_host: "localhost"
+dev_mongo_mexico_host: "localhost"
+dev_mongo_cached_host: "localhost"
+
+dev_mongo_files_esp_dbname: "files"
+dev_mongo_files_esp_hosts: "localhost"
+
+dev_mongo_files_mex_dbname: "tolmex-files"
+dev_mongo_files_mex_hosts: "localhost"
+
+dev_mongo_files_latam_dbname: "latam-files"
+dev_mongo_files_latam_hosts: "localhost"
+
+# TEST
+test_db_host: "localhost"
+test_db_user: "root"
+test_db_pass: ""
+test_db_name: "tolpro_test"
+test_db_port: "3306"
+
+test_db_latam_host: "localhost"
+test_db_latam_user: "root"
+test_db_latam_pass: ""
+test_db_latam_name: "latam_frontend_test"
+test_db_latam_port: "3306"
+
+test_db_mexico_host: "localhost"
+test_db_mexico_user: "root"
+test_db_mexico_pass: ""
+test_db_mexico_name: "tolmex_frontend_test"
+test_db_mexico_port: "3306"
+
+test_db_tirantid_host: "localhost"
+test_db_tirantid_user: "root"
+test_db_tirantid_pass: ""
+test_db_tirantid_name: "tirantid_test"
+test_db_tirantid_port: "3306"
+
+test_mongo_host: "localhost"
+test_mongo_latam_host: "localhost"
+test_mongo_mexico_host: "localhost"
+test_mongo_cached_host: "localhost"
+
+test_mongo_files_esp_dbname: "files"
+test_mongo_files_esp_hosts: "localhost"
+
+test_mongo_files_mex_dbname: "tolmex-files"
+test_mongo_files_mex_hosts: "localhost"
+
+test_mongo_files_latam_dbname: "latam-files"
+test_mongo_files_latam_hosts: "localhost"
+
+# PRODUCTION
+prod_db_host: "joanot2.tirant.net"
+prod_db_user: "tolpro"
+prod_db_pass: "ayatola"
+prod_db_name: "tolpro_apitolusers"
+prod_db_host_master: "joanot2.tirant.net"
+prod_db_host_slaves: "martorell.tirant.net"
+
+prod_db_latam_user: "latam"
+prod_db_latam_pass: "Netanyahu"
+prod_db_latam_name: "latam_frontend"
+prod_db_latam_hosts: "joanot2.tirant.net,martorell.tirant.net"
+prod_db_latam_slaves: "joanot2.tirant.net,martorell.tirant.net"
+
+prod_db_mexico_user: "tolmex"
+prod_db_mexico_pass: "tolmex,47"
+prod_db_mexico_name: "tolmex_frontend"
+prod_db_mexico_hosts: "joanot2.tirant.net,martorell.tirant.net"
+prod_db_mexico_slaves: "joanot2.tirant.net,martorell.tirant.net"
+
+prod_db_tirantid_host: "joanot2.tirant.net"
+prod_db_tirantid_user: "tirant"
+prod_db_tirantid_pass: "trnt,47"
+prod_db_tirantid_name: "tirantid"
+prod_db_tirantid_master: "joanot2.tirant.net"
+prod_db_tirantid_slave: "martorell.tirant.net"
+prod_db_tirantid_slave2: "martorell.tirant.net"
+prod_rails_max_threads: "10"
+
+# MONGOS
+prod_mongo_sessions_esp_dbname: "sessions_esp"
+prod_mongo_sessions_esp_hosts: "joanot2.tirant.net"
+prod_mongo_sessions_esp_replicaset: "rskk"
+
+prod_mongo_sessions_latam_dbname: "sessions_latam"
+prod_mongo_sessions_latam_hosts: "joanot2.tirant.net"
+prod_mongo_sessions_latam_replicaset: "rskk"
+
+prod_mongo_sessions_mex_dbname: "sessions_mex"
+prod_mongo_sessions_mex_hosts: "joanot2.tirant.net"
+prod_mongo_sessions_mex_replicaset: "rskk"
+
+prod_mongo_cached_hosts: "joanot2.tirant.net"
+
+prod_mongo_files_esp_dbname: "files"
+prod_mongo_files_esp_hosts: "joanot2.tirant.net"
+prod_mongo_files_esp_replicaset: "rskk"
+
+prod_mongo_files_mex_dbname: "tolmex-files"
+prod_mongo_files_mex_hosts: "joanot2.tirant.net"
+prod_mongo_files_mex_replicaset: "rskk"
+
+prod_mongo_files_latam_dbname: "latam-files"
+prod_mongo_files_latam_hosts: "joanot2.tirant.net"
+prod_mongo_files_latam_replicaset: "rskk"
+
+# GLOBALS
+XT_API_BASE_FOROS: "http://foros.tirant.net"
+XT_API_BASE_FOROS_PASS: "medaigual"
+
+REDIS_URL: "redis://localhost/"
+
+XT_GD_API_BASE_URI: "http://gestion.tirant.net/"
+XT_CLOUDLIBRARY_API_BASE_URI: "http://cloudlibraryapi-tol-pre.apps.ocp-mad.tirant.net/"
+
+SMTP_SERVER_PROD: "mail3.tirant.com"
+DEFAULT_CC_EMAIL_ATENCION_CLIENTE: "informatica@tirantonline.com"
+DEFAULT_CC_EMAIL_ATENCION_CLIENTE_MASSIVE: "informatica@tirantonline.com"
+EMAIL_AUTOVENTA_TOL: "informatica@tirant.com"
+EMAIL_AUTOVENTA_TASE: "informatica@tirant.com"
+EMAIL_AUTOVENTA_TNR: "informatica@tirant.com"
+EMAIL_AUTOVENTA_TPH: "informatica@tirant.com"
+EMAIL_AUTOVENTA_TOLMEX: "informatica@tirant.com"
+EMAIL_AUTOVENTA_COL: "informatica@tirant.com"
+EMAIL_AUTOVENTA_CHL: "informatica@tirant.com"
+
+URL_USER_IMAGES: "/userimages/"

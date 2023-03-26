@@ -1,0 +1,10 @@
+<%= yield %>
+<%=@site_email%>
+
+<% if @tolgeo == "esp" || @tolgeo == "latam" %>
+<%= I18n.t("email_common.footer.p1") %>
+<%= I18n.t("email_common.footer.p2") %>
+<% end %>
+
+<%= I18n.t("email_common.footer.p3") %>
+<%= I18n.t("email_common.footer.p4") %>

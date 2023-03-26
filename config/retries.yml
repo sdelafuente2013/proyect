@@ -1,0 +1,11 @@
+test:
+  times: 1
+  wait: 0
+
+development:
+  times: 3
+  wait: 3
+
+production:
+  times: 3
+  wait: 3

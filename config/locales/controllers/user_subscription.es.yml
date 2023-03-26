@@ -1,0 +1,5 @@
+es:
+  controllers:
+    users_subscriptions:
+      invalid_token: "El enlace de recuperación de contraseña no es válido. Vuelve a realizar la solicitud de cambio de contraseña."
+      invalid_token_confirmation: "El enlace de confirmación de correo no es válido."

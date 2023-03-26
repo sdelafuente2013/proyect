@@ -1,0 +1,17 @@
+CREATE DATABASE IF NOT EXISTS tolpro_apitolusers;
+CREATE DATABASE IF NOT EXISTS latam_frontend;
+CREATE DATABASE IF NOT EXISTS tolmex_frontend;
+CREATE DATABASE IF NOT EXISTS tirantid;
+CREATE DATABASE IF NOT EXISTS tolpro_apitolusers_test;
+CREATE DATABASE IF NOT EXISTS latam_frontend_test;
+CREATE DATABASE IF NOT EXISTS tolmex_frontend_test;
+CREATE DATABASE IF NOT EXISTS tirantid_test;
+CREATE USER IF NOT EXISTS 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'root';
+GRANT ALL ON tolpro_apitolusers.* TO 'root'@'%';
+GRANT ALL ON latam_frontend.* TO 'root'@'%';
+GRANT ALL ON tolmex_frontend.* TO 'root'@'%';
+GRANT ALL ON tirantid.* TO 'root'@'%';
+GRANT ALL ON tolpro_apitolusers_test.* TO 'root'@'%';
+GRANT ALL ON latam_frontend_test.* TO 'root'@'%';
+GRANT ALL ON tolmex_frontend_test.* TO 'root'@'%';
+GRANT ALL ON tirantid_test.* TO 'root'@'%';

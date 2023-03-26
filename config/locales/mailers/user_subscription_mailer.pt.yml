@@ -1,0 +1,17 @@
+pt:
+  user_subscription_mailer:
+    request_password_recovery:
+      subject: "Solicitação de recuperação de senha"
+      greeting: "Olá %{nombre}"
+      text1: "Recebemos um pedido para alterar sua senha. Você pode fazer isso clicando no link a seguir."
+      text2: "Se você não solicitou essa alteração, pode ignorar este e-mail."
+      text3: "Sua senha não será alterada até que você acesse o link acima e insira uma nova."
+      text: "Este link é válido por 24 horas."
+
+    confirm_update_email:
+      subject: "Solicitação de atualização de correio"
+      greeting: "Olá %{nombre}"
+      text1: "Recebemos um pedido para alterar seu e-mail. Você pode fazer isso clicando no link a seguir."
+      link_text: "Confirme a alteração do e-mail"
+      text2: "Se você não solicitou essa alteração, pode ignorar este e-mail."
+      text3: "Seu e-mail não será alterado até que você acesse o link acima e insira um novo."

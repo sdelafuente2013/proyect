@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body style="margin: 0px" bgColor="#ffffff">
+<table cellSpacing="0" cellPadding="0" width="770" bgColor="#ffffff" border="0">
+  <tbody>
+    <tr>
+      <td style="padding-right: 30px; padding-left: 30px; font-size: 12px; padding-bottom: 40px; color: #303030; padding-top: 40px; font-family: Arial, Helvetica, sans-serif" colSpan="2">
+        <%= yield %>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding-right: 8px; padding-left: 8px; font-size: 11px; padding-bottom: 8px; color: #777777; padding-top: 8px; font-family: Arial, Helvetica, sans-serif" bgColor="#dfdfdf" colSpan="2">
+        <br/><hr/><br/>
+        <% if @tolgeo == "esp" || @tolgeo == "latam" %>
+          <%= I18n.t('email_common.footer.lopd1') %><a href="mailto:dpo@tirant.com">dpo@tirant.com</a>.<br>
+        <% end %>
+        <%= I18n.t('email_common.footer.lopd2') %><br>
+        <%= I18n.t("email_common.footer.p4") %>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  </body>
+  </html>

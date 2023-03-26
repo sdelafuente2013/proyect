@@ -1,0 +1,69 @@
+default: &default
+  adapter: mysql2
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  port: 3306
+  encoding: utf8
+  cast_booleans: true
+
+  connect_timeout: 2
+  connect_attrs:
+    program_name: 'xt-api'
+  reconnect: true
+
+makara: &makara
+  blacklist_duration: 5
+  master_ttl: 10
+  master_strategy: failover
+  sticky: true
+  connection_error_matchers:
+    - !ruby/regexp '/^ActiveRecord::StatementInvalid: Mysql2::Error: Unknown command:/'
+    - '/Sql Server Has Gone Away/'
+    - 'Mysql2::Error: Duplicate entry'
+
+development: &development
+  <<: *default
+  username: <%= ENV['dev_db_tirantid_user'] %>
+  password: <%= ENV['dev_db_tirantid_pass'] %>
+  database: <%= ENV['dev_db_tirantid_name'] %>
+  host: <%= ENV['dev_db_tirantid_host'] %>
+  port: <%= ENV['dev_db_tirantid_port'] || 3306 %>
+
+staging: &staging
+  <<: *default
+  adapter: 'mysql2_makara'
+  username: <%= ENV['staging_db_tirantid_user'] %>
+  password: <%= ENV['staging_db_tirantid_pass'] %>
+  database: <%= ENV['staging_db_tirantid_name'] %>
+  host: <%= ENV['staging_db_tirantid_host'] %>
+  port: 3306
+  makara:
+    <<: *makara
+    connections:
+      - role: master
+        host: <%= ENV['staging_db_tirantid_master'] %>
+
+production: &production
+  <<: *default
+  adapter: 'mysql2_makara'
+  database: <%= ENV['prod_db_tirantid_name'] %>
+  username: <%= ENV['prod_db_tirantid_user'] %>
+  password: <%= ENV['prod_db_tirantid_pass'] %>
+  host: <%= ENV['production_db_tirantid_host'] %>
+  pool: <%= api_pool_size %>
+  makara:
+    <<: *makara
+    connections:
+      - role: master
+        host: <%= ENV['prod_db_tirantid_master'] %>
+      - role: slave
+        host: <%= ENV['prod_db_tirantid_slave'] %>
+      - role: slave
+        host: <%= ENV['prod_db_tirantid_slave2'] %>
+
+test: &test
+  <<: *default
+  username: <%= ENV['test_db_tirantid_user'] %>
+  password: <%= ENV['test_db_tirantid_pass'] %>
+  host: <%= ENV['test_db_tirantid_host'] %>
+  database: <%= ENV['test_db_tirantid_name'] %>
+  port: <%= ENV['test_db_tirantid_port'] || 3306 %>

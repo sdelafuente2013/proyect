@@ -1,0 +1,11 @@
+<p style="margin-bottom: 0cm">
+
+  <p><%= I18n.t("email_user_passwd.p1") %></p>
+  <p><%= I18n.t("email_user_passwd.p2") %> <%= @subsystem.name %>:</p>
+
+  <p><%= I18n.t("email_user_passwd.p3") %> <a href="<%=@subsystem.url%>"><%= @subsystem.url %></a></p>
+  <p><%= I18n.t("email_user_passwd.p4") %> <strong><%= @user.username %></strong></p>
+  <p><%= I18n.t("email_user_passwd.p5") %> <strong><%= @user.password %></strong></p>
+
+  <p><%= I18n.t("email_user_passwd.p7") %>,<br><%= I18n.t("email_user_passwd.p8") %></p>
+</p>

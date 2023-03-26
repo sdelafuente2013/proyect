@@ -1,0 +1,17 @@
+ca:
+  user_subscription_mailer:
+    request_password_recovery:
+      subject: "Sol·licitud de recuperació de contrasenya"
+      greeting: "Hola %{nombre}"
+      text1: "Hem rebut una sol·licitud de canvi de contrasenya del vostre compte. Pots fer-ho fent clic a l'enllaç següent."
+      text2: "Si no has sol·licitat aquest canvi, ignora aquest correu electrònic."
+      text3: "La contrasenya no es canviarà fins que accedeixis a l'enllaç de dalt i introdueixis una de nova."
+      text4: "Aquest enllaç té una validesa de 24 hores."
+
+    confirm_update_email:
+      subject: "Petició d'actualització de correu"
+      greeting: "Hola %{nombre}"
+      text1: "Hem rebut una sol·licitud de canvi per correu electrònic del vostre compte. Podeu confirmar-ho fent clic a l'enllaç següent."
+      link_text: "Confirma canvi de correu"
+      text2: "Si no has sol·licitat aquest canvi, ignora aquest correu electrònic."
+      text3: "El teu correu no es canviarà fins que accedeixis a l'enllaç de dalt i introdueixis un nou."

@@ -1,0 +1,26 @@
+pt:
+  lopd:
+    top:
+      - "Conforme o disposto na Lei de nº 12.965 de 2014 (Marco Civil da Internet) e no Decreto nº
+        8.771, de 11 de maio de 2016 que a regulamenta, lhe informamos que seus dados pessoais
+        passarão a fazer parte de um arquivo denominado CLIENTES ou FORNECEDORES de titularidade da
+        EDITORIA TIRANT O BLANCH S.L. com CIF B46091179."
+      - "Os dados pessoais se coletam com a finalidade de gerenciar adequadamente a informação
+        contábil, fiscal e administrativa dos clientes ou fornecedores, bem como para a publicidade
+        e prospecção comercial. Os dados coletados se conservaráo enquanto não se requira a
+        exclusão deles do nosso arquivo pelo próprio usuário, e poderão ser cedidos ou comunicados a
+        colaboradores/terceiros com a finalidade de resolver e cobrir as suas necessidades, bem como
+        para que possamos lhe oferecer serviços relacionados, publicidade e prospecção comercial."
+    bottom:
+      - "Por sua vez, lhe informamos que em qualquer momento você poderá exercer seus direitos de
+        acesso, retificação, exclusão, portabilidade, limitação ou oposição ao tratamento dos seus
+        dados, bem como retirar o consentimento dado ou formular reclamações diretamente na
+        Autoridade de Controle. As mencionadas ações poderão ser exercidas enviando o seu
+        requerimento por correio postal ao endereço C/ ARTES GRÁFICAS, Nº 14 BAJO (46010 VALENCIA) -
+        ESPANHA ou bem , enviando um e-mail a <a href='mailto:dpo@tirant.com?subject=Protección de
+        datos'>dpo@tirant.com</a> colocando no assunto a referência
+        \"<a href='mailto:dpo@tirant.com?subject=Protección de datos'>Protección de Datos</a>\"."
+    actions:
+      main: "Autorizo apenas o tratamento dos meus dados para fins de utilização do recurso"
+      commercial: "Autorizo o tratamento dos meus dados para contatos comerciais e promocionais"
+      personal_data: "Autorizo o tratamento dos meus dados para contatos comerciais e promocionais e compartilhamento com terceiros"

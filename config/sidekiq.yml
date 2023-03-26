@@ -1,0 +1,27 @@
+# See also config/initializers/sidekiq.rb
+
+# default concurrency
+:concurrency: 2
+
+:pidfile: ./tmp/pids/sidekiq.pid
+:logfile: ./log/sidekiq.log
+
+:verbose: false
+:queues:
+  - [default, 1]
+  - [mailers, 1]
+:daemon: false
+
+:development:
+  :concurrency: 1
+
+staging:
+  :pidfile: /home/deployer2/apps/toluserapi/shared/tmp/pids/sidekiq.pid
+  :logfile: /home/deployer2/apps/toluserapi/shared/log/sidekiq.log
+
+production:
+  :daemon: false
+  :pidfile: tmp/sidekiq.pid
+  :concurrency:  5
+  :logfile: /dev/stdout
+

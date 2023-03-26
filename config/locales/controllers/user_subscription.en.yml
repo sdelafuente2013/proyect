@@ -1,0 +1,5 @@
+en:
+  controllers:
+    users_subscriptions:
+      invalid_token: "The restore password link is not valid. Ask for password reset again."
+      invalid_token_confirmation: "The confirmation link is not valid."

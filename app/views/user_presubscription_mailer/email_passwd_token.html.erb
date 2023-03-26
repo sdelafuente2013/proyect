@@ -1,0 +1,11 @@
+<p style="margin-bottom: 0cm">
+
+  <p><%= I18n.t("email_user_passwd.p1") %></p>
+  <p><%= I18n.t("email_user_passwd_token.p1", app_name: @subsystem.name) %></p>
+  <p><%= I18n.t("email_user_passwd_token.p2") %></p>  
+  <p><a href="<%= @url_with_token %>"><%= @url_with_token %></a></p>
+  <p><%= I18n.t("email_user_passwd_token.p3") %></p>
+  <p><%= I18n.t("email_user_passwd_token.p4", app_name: @subsystem.name) %></p>
+
+  <p><%= I18n.t("email_user_passwd.p7") %>,<br><%= I18n.t("email_user_passwd.p8") %></p>
+</p>

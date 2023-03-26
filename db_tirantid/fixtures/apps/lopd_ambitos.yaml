@@ -1,0 +1,51 @@
+lopd_ambito_LIBRERIA_ESP_default:
+  nombre: 'default'
+  lopd_app: 'LIBRERIA_ESP'
+lopd_ambito_GESTION_DE_DESPACHOS_default:
+  nombre: 'default'
+  lopd_app: 'GESTION_DE_DESPACHOS'
+lopd_ambito_LIBRERIA_MEX_default:
+  nombre: 'default'
+  lopd_app: 'LIBRERIA_MEX'
+lopd_ambito_FORMACION_default:
+  nombre: 'default'
+  lopd_app: 'FORMACION'
+lopd_ambito_CLOUDLIBRARY_default:
+  nombre: 'default'
+  lopd_app: 'CLOUDLIBRARY'
+lopd_ambito_BASES_DE_DATOS_default:
+  nombre: 'default'
+  lopd_app: 'BASES_DE_DATOS'
+lopd_ambito_BASES_DE_DATOS_personalizacion:
+  nombre: 'personalizacion'
+  lopd_app: 'BASES_DE_DATOS'
+lopd_ambito_BASES_DE_DATOS_altagratuita:
+  nombre: 'altagratuita'
+  lopd_app: 'BASES_DE_DATOS'
+lopd_ambito_BASES_DE_DATOS_contactoscomerciales:
+  nombre: 'contactoscomerciales'
+  lopd_app: 'BASES_DE_DATOS'
+lopd_ambito_BASES_DE_DATOS_empresa:
+  nombre: 'empresa'
+  lopd_app: 'BASES_DE_DATOS'
+lopd_ambito_BASES_DE_DATOS_novedades:
+  nombre: 'novedades'
+  lopd_app: 'BASES_DE_DATOS'
+lopd_ambito_CONECTA_default:
+  nombre: 'default'
+  lopd_app: 'CONECTA'
+lopd_ambito_PROMOTIONS_default:
+  nombre: 'default'
+  lopd_app: 'PROMOTIONS'  
+lopd_ambito_BASES_DE_DATOS_conecta:
+  nombre: 'conecta'
+  lopd_app: 'BASES_DE_DATOS'
+lopd_ambito_LIBRERIA_ESP_conecta:
+  nombre: 'conecta'
+  lopd_app: 'LIBRERIA_ESP'
+lopd_ambito_CLOUDLIBRARY_conecta:
+  nombre: 'conecta'
+  lopd_app: 'CLOUDLIBRARY'
+lopd_ambito_CONECTA_libreria:
+  nombre: 'libreria'
+  lopd_app: 'CONECTA'  

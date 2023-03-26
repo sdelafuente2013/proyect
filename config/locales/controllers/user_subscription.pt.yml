@@ -1,0 +1,5 @@
+pt:
+  controllers:
+    users_subscriptions:
+      invalid_token: "O link de senha de restauração não é válido. Solicite a redefinição da senha novamente."
+      invalid_token_confirmation: "O link de confirmação é inválido"

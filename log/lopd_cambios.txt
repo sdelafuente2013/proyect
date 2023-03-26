@@ -1,0 +1,6 @@
+5493,BASES_DE_DATOS_LATAM,personalizacion,2022-09-30T08:10:57Z,CREATE,
+5495,BASES_DE_DATOS_LATAM,personalizacion,2022-09-30T08:22:22Z,CREATE,
+88731,BASES_DE_DATOS,personalizacion,2022-09-30T09:43:14Z,UPDATE,{"privacidad":[false,true],"nombre":["Paco","test-tol"],"apellidos":["Guerrero","tol"],"telefono":["435435345","1234556"],"updated_at":["2021-10-07 15:34:36 UTC","2022-09-30 09:43:14 UTC"]}
+88733,BASES_DE_DATOS,personalizacion,2022-09-30T09:49:59Z,UPDATE,{"privacidad":[false,true],"nombre":["Paco","tase"],"apellidos":["Guerrero","tase"],"telefono":["322546","1234566"],"updated_at":["2021-10-07 15:34:37 UTC","2022-09-30 09:49:59 UTC"]}
+88735,BASES_DE_DATOS,personalizacion,2022-09-30T09:55:37Z,UPDATE,{"privacidad":[false,true],"nombre":["Paco","notario"],"apellidos":["Guerrero","notario"],"telefono":["453635463","123456"],"updated_at":["2021-10-07 15:34:38 UTC","2022-09-30 09:55:37 UTC"]}
+88737,BASES_DE_DATOS,personalizacion,2022-09-30T10:02:27Z,UPDATE,{"privacidad":[false,true],"nombre":["Paco","tph"],"apellidos":["Guerrero","tph"],"telefono":["3462626","123456"],"updated_at":["2021-10-07 15:34:39 UTC","2022-09-30 10:02:27 UTC"]}

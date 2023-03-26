@@ -1,0 +1,150 @@
+development:
+  clients:
+    default:
+      database: sessions
+      hosts:
+        - <%= ENV["dev_mongo_host"] %>
+      options:
+        wait_queue_timeout: 1
+        server_selection_timeout: 1
+        connect_timeout: 1
+    sessions_latam:
+      database: sessions_latam
+      hosts:
+        - <%= ENV["dev_mongo_latam_host"] %>
+      options:
+    sessions_mex:
+      database: sessions_mex
+      hosts:
+        - <%= ENV["dev_mongo_mexico_host"] %>
+      options:
+    user_subscription_cases:
+      database: user_subscription_cases
+      hosts:
+        - localhost
+      options:
+    files_esp:
+      database: <%= ENV["dev_mongo_files_esp_dbname"] %>
+      hosts: ["<%=ENV['dev_mongo_files_esp_hosts']%>"]
+      options:
+    files_mex:
+      database: <%= ENV["dev_mongo_files_mex_dbname"] %>
+      hosts: ["<%=ENV['dev_mongo_files_mex_hosts']%>"]
+      options:
+    files_latam:
+      database: <%= ENV["dev_mongo_files_latam_dbname"] %>
+      hosts: ["<%=ENV['dev_mongo_files_latam_hosts']%>"]
+      options:
+    cached:
+      database: "cached"
+      hosts:
+        - <%= ENV["dev_mongo_cached_host"] %>
+  options:
+
+test_options: &test_options
+  options:
+    read:
+      mode: :primary
+    max_pool_size: 1
+    # The name of the user for authentication.
+    user: <%= ENV["MONGODB_USER"] %>
+    # The password of the user for authentication.
+    password: <%= ENV["MONGODB_PASSWORD"] %>
+    auth_source: <%= ENV["MONGODB_AUTH_SOURCE"] %>
+
+test:
+  clients:
+    default:
+      database: tol_users_api_test
+      hosts:
+        - <%= ENV["test_mongo_host"] %>
+      <<: *test_options
+    sessions_latam:
+      database: sessions_latam_test
+      hosts:
+        - <%= ENV["test_mongo_latam_host"] %>
+      <<: *test_options
+    sessions_mex:
+      database: sessions_mex_test
+      hosts:
+        - <%=ENV['test_mongo_mexico_host']%>
+      <<: *test_options
+    files_esp:
+      database: <%= ENV["test_mongo_files_esp_dbname"] %>
+      hosts: ["<%=ENV['test_mongo_files_esp_hosts']%>"]
+      <<: *test_options
+    files_mex:
+      database: <%= ENV["test_mongo_files_mex_dbname"] %>
+      hosts: ["<%=ENV['test_mongo_files_mex_hosts']%>"]
+      <<: *test_options
+    files_latam:
+      database: <%= ENV["test_mongo_files_latam_dbname"] %>
+      hosts: ["<%=ENV['test_mongo_files_latam_hosts']%>"]
+      <<: *test_options
+    cached:
+      database: "cached"
+      hosts:
+        - <%= ENV["test_mongo_cached_host"] %>
+      <<: *test_options
+        
+replica_set_default_options: &REPLICA_SET_DEFAULT_OPTIONS
+  read:
+    mode: :nearest
+  heartbeat_frequency: 10
+  local_threshold: 0.015
+  connect: :replica_set
+
+  wait_queue_timeout: 1
+  server_selection_timeout: 1
+  connect_timeout: 1
+
+production:
+  clients:
+    default:
+      database: <%= ENV["prod_mongo_sessions_esp_dbname"] %>
+      hosts: ["<%=ENV['prod_mongo_sessions_esp_hosts']%>"]
+      options:
+        <<: *REPLICA_SET_DEFAULT_OPTIONS
+        replica_set: <%= ENV["prod_mongo_sessions_esp_replicaset"] %>
+        write:
+          w: 2
+    sessions_latam:
+      database: <%= ENV["prod_mongo_sessions_latam_dbname"] %>
+      hosts: ["<%=ENV['prod_mongo_sessions_latam_hosts']%>"]
+      options:
+        <<: *REPLICA_SET_DEFAULT_OPTIONS
+        replica_set: <%= ENV["prod_mongo_sessions_latam_replicaset"] %>
+        write:
+          w: 2
+    sessions_mex:
+      database: <%= ENV["prod_mongo_sessions_mex_dbname"] %>
+      hosts: ["<%=ENV['prod_mongo_sessions_mex_hosts']%>"]
+      options:
+        <<: *REPLICA_SET_DEFAULT_OPTIONS
+        replica_set: <%= ENV["prod_mongo_sessions_mex_replicaset"] %>
+        write:
+          w: 2
+    files_esp:
+      database: <%= ENV["prod_mongo_files_esp_dbname"] %>
+      hosts: ["<%=ENV['prod_mongo_files_esp_hosts']%>"]
+      options:
+        <<: *REPLICA_SET_DEFAULT_OPTIONS
+        replica_set: <%= ENV["prod_mongo_files_esp_replicaset"] %>
+    files_mex:
+      database: <%= ENV["prod_mongo_files_mex_dbname"] %>
+      hosts: ["<%=ENV['prod_mongo_files_mex_hosts']%>"]
+      options:
+        <<: *REPLICA_SET_DEFAULT_OPTIONS
+        replica_set: <%= ENV["prod_mongo_files_mex_replicaset"] %>
+    files_latam:
+      database: <%= ENV["prod_mongo_files_latam_dbname"] %>
+      hosts: ["<%=ENV['prod_mongo_files_latam_hosts']%>"]
+      options:
+        <<: *REPLICA_SET_DEFAULT_OPTIONS
+        replica_set: <%= ENV["prod_mongo_files_latam_replicaset"] %>
+    cached:
+      database: "cached"
+      hosts: ["<%=ENV['prod_mongo_cached_hosts']%>"]
+      options:
+        <<: *REPLICA_SET_DEFAULT_OPTIONS
+        replica_set: <%= ENV["prod_mongo_cached_replicaset"] %>

@@ -1,0 +1,50 @@
+<p style="margin-bottom: 0cm">
+
+  <p><%= I18n.t("email_data_full.p1") %></p>
+  <p><%= I18n.t("email_data_full.p2") %> <%= @subsystem.name %>. <%= I18n.t("email_data_full.p2_1") %></p>
+
+  <p><%= I18n.t("email_data_full.p3") %> <strong><%=@user.full_name%></strong><p>
+  <p><%= I18n.t("email_data_full.p4") %> <strong><%=@user.nif%></strong></p>
+  <p><%= I18n.t("email_data_full.p5") %> <strong><%=@user.persona_contacto%></strong></p>
+  <p><%= I18n.t("email_data_full.p6") %> <strong><%=@user.direccion%></strong></p>
+  <p><%= I18n.t("email_data_full.p7") %> <strong><%=@user.poblacion%></strong></p>
+  <p><%= I18n.t("email_data_full.p8") %> <strong><%=@user.cp%></strong></p>
+  <p><%= I18n.t("email_data_full.p9") %> <strong><%=@user.email%></strong></p>
+  <p><%= I18n.t("email_data_full.p10") %> <strong><%=@user.telefono%></strong></p>
+  <p><%= I18n.t("email_data_full.p11") %> <strong><%=@user.fax%></strong></p>
+  <p><%= I18n.t("email_data_full.p12") %> <strong><%= I18n.t("email_data_full.p12_1") %> <%=@subsystem.name%>
+     <% if @user.is_premium? %>
+      Premium
+     <% elsif @user.has_consultoria? %>
+       + <%= I18n.t("email_data_full.p13") %>
+     <% end %>
+    </strong>
+  </p>
+
+  <p><%= I18n.t("email_data_full.p14") %></p>
+  <p><%= I18n.t("email_data_full.p15") %> <strong><%= @user.username %></strong></p>
+  <p><%= I18n.t("email_data_full.p17") %> <strong><%= @user.password %></strong></p>
+  <p><%= I18n.t("email_data_full.p16") %></p>
+  <p><%= I18n.t("email_data_full.p18") %></p>
+  <ol>
+    <li><%= I18n.t("email_data_full.p19") %> <a href="<%=@subsystem.url%>"><%= @subsystem.url %></a></li>
+    <li><%= I18n.t("email_data_full.p20") %></li>
+    <li><%= I18n.t("email_data_full.p21") %></li>
+    <li><%= I18n.t("email_data_full.p22") %></li>
+  </ol>
+  <p><%= I18n.t("email_data_full.p23") %></p>
+
+  <% unless @user_subscription.nil? %>
+    <p><%= I18n.t("email_data_full.p24") %></p>
+    <p><%= I18n.t("email_data_full.p15") %> <strong><%=@user_subscription.perusuid%></strong> </p>
+    <p>
+      <strong>
+        <%= link_to I18n.t("email_data_full.p29"), params[:reset_password_url], target: '_blank' %>
+      </strong>
+    </p>
+  <% end %>
+
+  <p><%= I18n.t("email_data_full.call_for_support") %></p>
+  <p><%= I18n.t("email_data_full.p25") %></p>
+  <p><%= I18n.t("email_data_full.p26") %>,<br><%= I18n.t("email_data_full.p27") %></p>
+</p>

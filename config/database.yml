@@ -1,0 +1,80 @@
+# DEFAULTS
+default: &default
+  adapter: mysql2
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  port: 3306
+  encoding: utf8
+
+  connect_timeout: 2
+  connect_attrs:
+    program_name: 'xt-toluserapi'
+  reconnect: true
+  
+makara: &makara
+  blacklist_duration: 5
+  master_ttl: 10
+  master_strategy: failover
+  sticky: true
+  connection_error_matchers:
+    - !ruby/regexp '/^ActiveRecord::StatementInvalid: Mysql2::Error: Unknown command:/'
+    - '/Sql Server Has Gone Away/'
+    - 'Mysql2::Error: Duplicate entry'
+
+# DEVELOPMENT
+
+development: &development
+  <<: *default
+  adapter: 'mysql2' #'mysql2_makara'
+  username: <%= ENV["dev_db_user"] %>
+  password: <%= ENV["dev_db_pass"] %>
+  host: <%= ENV["dev_db_host"] %>
+  database: <%= ENV["dev_db_name"] %>
+  port: <%= ENV["dev_db_port"] || 3306 %>
+  pool: 5
+#  makara:
+#    <<: *makara
+#    connections:
+#      - role: master
+#        host: <%= ENV["dev_db_host_master"] %>
+#      - role: slave
+#        host: <%= ENV["dev_db_host_slave"] %>
+
+staging: &staging
+  <<: *default
+  adapter: 'mysql2_makara'
+  username: <%= ENV["dev_db_user"] %>
+  password: <%= ENV["dev_db_pass"] %>
+  host: <%= ENV["dev_db_host"] %>
+  database: <%= ENV["dev_db_name"] %>
+  pool: 5
+  makara:
+    <<: *makara
+    connections:
+      - role: master
+        host: <%= ENV["dev_db_host_master"] %>
+      - role: slave
+        host: <%= ENV["dev_db_host_slave"] %>
+             
+production: &production
+  <<: *default
+  adapter: 'mysql2_makara'
+  database: <%= ENV["prod_db_name"] %>
+  username: <%= ENV["prod_db_user"] %>
+  password: <%= ENV["prod_db_pass"] %>
+  host: <%= nearest_ping_host "#{ENV['prod_db_host_master']}".split(",") %>
+  pool: <%= api_pool_size %>
+  makara:
+    <<: *makara
+    connections:
+      - role: master
+        host: <%= nearest_ping_host "#{ENV['prod_db_host_master']}".split(",") %>
+      - role: slave
+        host: <%= nearest_ping_host "#{ENV['prod_db_host_slaves']}".split(",") %>
+
+test: &test
+  <<: *default
+  username: <%= ENV["test_db_user"] %>
+  password: <%= ENV["test_db_pass"] %>
+  database: <%= ENV["test_db_name"] %>
+  host: <%= ENV["test_db_host"] %>
+  port: <%= ENV["test_db_port"] || 3306 %>

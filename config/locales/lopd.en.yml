@@ -1,0 +1,37 @@
+en:
+  lopd:
+    top:
+      - "Pursuant to Spanish Law (Ley Orgánica 15/1999 de 13 de diciembre de Protección de Datos de
+        Carácter Personal) and EU Regulation 2016/679 OF THE European Parliament and the Council,
+        dated 27 April 2016 on the protection of the natural persons with regard to the processing
+        of personal data and rules relating to the free movement of personal data, you are hereby
+        informed that EDITORIAL TIRANT LO BLANCH SL, with registered offices in Valencia, at Calle
+        Artes Gráficas, nº 14 Bajo (46010, Valencia) Valencia and holding Corporate Tax ID
+        nº B-46.091.179 (hereinafter \"Tirant Lo Blanch\") will be processing your personal data in
+        its capacity as data controller. Your personal data will be transferred to a file owned by
+        Tirant Lo Blanch called \"Customers and/or suppliers\"."
+      - "Your data is collected for the purpose of managing customers and/or supliers data
+        accounting, fiscal and administrative wise as well as for commercial purposes. We may also
+        use the data to inform you about new features, products or services, and/or to improve the
+        services that we offer by tailoring them to your needs. The above mentioned data will be
+        kept in our books for as long as its deletion is not requested upon by the interested party.
+        Furthermore, unless otherwise specified on the Service, we may share your data with
+        third-party service providers for commercial purposes. In addition, Tirant lo Blanch may
+        assign or communicate your personal data in order to fulfil its obligations with the public
+        administrations in those cases where this is required by the applicable legislation in
+        force, as well as by administrative bodies such as law enforcement officers or courts."
+    bottom:
+      - "Moreover, Tirant lo Blanch hereby informs you that you may exercise your rights to access,
+        correct, oppose or delete your data at any time. We also inform you that you are entitled to
+        withdraw your consent as well as filing a complaint with the Spanish Data Protection Agency
+        at any time by following the instructions herein provided. Please send your request via
+        email to the following address:
+        <a href='mailto:dpo@tirant.com?subject=Data Protection'>dpo@tirant.com</a> using
+        \"<a href='mailto:dpo@tirant.com?subject=Data Protection'>Data Protection</a>\" as subject
+        or by sending a request via standard mail to the following address: CALLE ARTES GRÁFICAS,
+        Nº 14 BAJO (46010, VALENCIA) - SPAIN, along with a photocopy of your Spanish Identity
+        Document (DNI) or Passport."
+    actions:
+      main: "I understand and accept the conditions of TirantLoBlach according to the current LOPD"
+      commercial: "Yes, I authorize the processing of my contact data for the sending of commercial communications"
+      personal_data: "Yes, I authorize the communication of my data to the rest of the companies in the group"

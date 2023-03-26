@@ -1,0 +1,136 @@
+ca:
+  login:
+    exceptions:
+      invalid_ips: "Accés des d'IP invalida"
+      invalid_ticket: "Tiquet invalido"
+      wrong_password: "Contrasenya incorrecta"
+      invalid_user: "Usuari no oposat"
+      username_required: "Username és requerit"
+      password_required: "Contrasenya és requerida"
+      invalid_referer: "Referer incorrecte"
+      user_connections_is_zero: "Numero de connexions és zero"
+      user_exceed_max_connections: "Numero màxim de connexions aconseguides %{max_conexiones}"
+      invalid_gmid: "L'usuari no té assignat el grup de matèries"
+      user_expired: "Subscripció caducada"
+      invalid_ticket_auth_external: "Fallo al obtener ticket: external_username o external_email incorrectos"
+      unexpected_error: "Error inesperado"
+      user_not_permissions: "Usuario sin permisos"
+
+  access_error:
+    tipo_error_acceso_id_1: "IP Inválida"
+    tipo_error_acceso_id_2: "Ticket inválido"
+    tipo_error_acceso_id_3: "Password erróneos"
+    tipo_error_acceso_id_4: "Usuario no encontrado"
+    tipo_error_acceso_id_5: "Referer incorrecto"
+    tipo_error_acceso_id_6: "Num.conexiones es cero"
+    tipo_error_acceso_id_7: "Num.maximo conexiones alcanzado"
+    tipo_error_acceso_id_8: "Grupo materias invalido"
+    tipo_error_acceso_id_9: "Subscripción caducada"
+    tipo_error_acceso_id_10: "Ticket autenticación externa"
+    tipo_error_acceso_id_11: "Error inesperado"
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: ha de ser acceptat
+      blank: no pot estar en blanc
+      confirmation: no coincideix
+      empty: no pot estar buit
+      equal_to: ha de ser igual a %{count}
+      even: ha de ser parell
+      exclusion: està reservat
+      greater_than: ha de ser més gran que %{count}
+      greater_than_or_equal_to: ha de ser més gran o igual a %{count}
+      inclusion: no està inclós a la llista
+      invalid: no és vàlid
+      less_than: ha de ser menor que %{count}
+      less_than_or_equal_to: ha de ser menor o igual a %{count}
+      not_a_number: no és un número
+      not_an_integer: ha de ser un enter
+      odd: ha de ser senar
+      taken: no està disponible
+      too_long: és massa llarg (%{count} caràcters màxim)
+      too_short: és massa curt (%{count} caràcters mínim)
+      wrong_length: no té la longitud correcta (%{count} caràcters exactament)
+  email_sub_passwd:
+    p1: "Estimat usuari:"
+    p2: "A continuació disposa de les seves dades d'accés per"
+    p3: "Pàgina d'accés:"
+    p4: "Usuari:"
+    p5: "Entreu al següent enllaç per actualitzar el seu password i activar el seu compte:"
+    p6: "Aquest enllaç té una validesa de 24 hores"
+    p7: "Atentament"
+    p8: "Dpt. Atenció a l'Client"
+  email_user_passwd:
+    p1: "Estimat usuari/a:"
+    p2: "A continuació disposa del enllaç de canvi de contrasenya"
+    p3: "Canviar la contrasenya"
+    p4: "La contrasenya no es canviarà fins que accedeixis a l'enllaç de dalt i creus una de nova."
+    p5: "Atentament"
+    p6: "Dpto. Atenció al Client"
+  materia:
+    esp:
+      '1': Laboral
+      '2': Propietat Horitzontal
+      '3': Financer i Tributari
+      '4': Comptabilitat i auditoria
+      '5': Mercantil
+      '6': Estrangeria
+      '7': Separació i Divorci
+      '8': Urbanisme i edificació
+      '9': Concursal
+      '10': Execució penal i penitenciária
+      '13': Notaris
+      '14': Laboral y gestió de personal
+      '16': Adreça economicofinancera
+      '17': Dirección de producció
+      '18': Marqueting y comunicació
+      '19': Jurídic
+      '21': Penal
+      '22': Contratos
+      '23': Universidad
+      '24': Arrendaments Urbans
+      '25': Propietad Horizontal
+      '26': Dret de Familia
+      '27': Trànsit i indemnitzacions
+
+  user_presubscription:
+    errors:
+      perusuid:
+        exists: "%{email} ja està donat d'alta en personalització"
+        many_exist: "Els següents emails ja estan donats d'alta en personalització: "
+        password_blanks: "La contrasenya no pot contenir caràcters en blanc."
+  user_ip:
+    errors:
+      format: "Els camps d'una mateixa ip han de tenir el mateix format (ipv4 or ipv6)"
+
+  canaltirant:
+    editorial: Editorial Tirant
+    derecho: Libreria jurídica
+    libreria: Libreria Tirant
+    humanidades: Tirant Humanidades
+    libmex: Tirant México
+    tol: Tirant Online
+    formacion: Tirant Formación
+    tase: Tirant Asesores
+    emp: Tirant Empresas
+    tnr: Tirant Notarios
+    immobiliario: Tirant PH
+    biblioteca: Biblioteca Virtual
+    corporativa: Tirant Corporativa
+    nubedelectura: Nube de Lectura
+    tph: Tirant P. Horizontal
+    tolmex: Tirant Online México
+    conmex: Tirant Contadores
+    latam: Tirant Online Latam
+    analytics: Tirant Analytics
+    teoriayderecho: Teoría y Derecho
+    formacionmexico: Formación México
+    formacionbrasil: Formación Brasil
+    bvbrasil: Biblioteca Virtual Brasil
+    libchl: Tirant Chile
+    libcol: Tirant Colombia
+    compliancers: Tirant Compliancers
+    libbra: Tirant Brasil
+    col: Tirant Online Colombia
+    chl: Tirant Online Chile
+    per: Tirant Online Perú

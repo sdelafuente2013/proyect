@@ -1,0 +1,5 @@
+<%= I18n.t('email_data_full.customer_support')%><br/>
+<%= tolgeo_mailer_setting( 'tirant_address' ).html_safe %>
+
+<%= I18n.t('email_data_full.phone') %> <%= tolgeo_mailer_setting 'tirant_phone' %><br/>
+<%= I18n.t('email_data_full.email') %>: <a style="color: #671314" href="mailto:<%= tolgeo_mailer_setting 'tirant_mail_atencion' %>" target="_blank"><%= tolgeo_mailer_setting 'tirant_mail_atencion' %></a>

@@ -1,0 +1,27 @@
+lopd_app_BASES_DE_DATOS:
+  nombre: 'BASES_DE_DATOS'
+  empresa: '1'
+lopd_app_BASES_DE_DATOS_LATAM:
+  nombre: 'BASES_DE_DATOS_LATAM'
+  empresa: '1'
+lopd_app_LIBRERIA_ESP:
+  nombre: 'LIBRERIA_ESP'
+  empresa: '2'
+lopd_app_GESTION_DE_DESPACHOS:
+  nombre: 'GESTION_DE_DESPACHOS'
+  empresa: '1'
+lopd_app_LIBRERIA_MEX:
+  nombre: 'LIBRERIA_MEX'
+  empresa: '2'
+lopd_app_FORMACION:
+  nombre: 'FORMACION'
+  empresa: '3'
+lopd_app_CLOUDLIBRARY:
+  nombre: 'CLOUDLIBRARY'
+  empresa: '1'
+lopd_app_CONECTA:
+  nombre: 'CONECTA'
+  empresa: '1'
+lopd_app_PROMOTIONS:
+  nombre: 'PROMOTIONS'
+  empresa: '1'

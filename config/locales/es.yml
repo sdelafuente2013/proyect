@@ -1,0 +1,274 @@
+es:
+  admin_mailer:
+    email_call_back:
+      subject: Nueva petición de te llamamos desde %s
+      text: Datos de contacto del usuario
+      text2: Franja horaria preferida
+      origen: Esta petición ha llegado desde
+  alert_mailer:
+    alert_mail:
+      subject: 'Alertas programadas en %{title}'
+      heading: 'Alertas programadas en %{title}'
+      subheading: 'Documentos que han sido modificados.'
+      modificacionesvigencia: 'Modificaciones de vigencia'
+      body_1: 'Consulte de nuevo el contenido y las modificaciones en '
+      body_2: Esta recibiendo este correo porque está dado de alta en las alertas a este documento de la web de %{title}.
+              Si desea dar de baja esta alerta, pulse en el siguiente enlace
+      body_3: Si desea dar de baja sus las alertas de esta web, pulse en el siguiente enlace
+      lopd: En cumplimiento de lo dispuesto en el REGLAMENTO (UE) 2016/679 DEL PARLAMENTO EUROPEO Y DEL CONSEJO de 27 de abril de 2016,
+            le informamos de que los datos de contacto utilizados para la presente comunicación serán incluidos en un fichero titularidad
+            de EDITORIAL TIRANT LO BLANCH S.L. con la finalidad de posibilitar las comunicaciones a través del correo electrónico de la misma
+            con los distintos contactos que ésta mantiene dentro del ejercicio de su actividad. Sin perjuicio de ello se le informa de que usted
+            podrá ejercitar los derechos de acceso, rectificación, cancelación y oposición así como los demás derechos que recoge el citado reglamento,
+            para lo cual debe dirigirse a EDITORIAL TIRANT LO BLANCH S.L. situado en C/ ARTES GRÁFICAS, Nº 14 BAJO (46010 VALENCIA) VALENCIA,
+            adjuntando fotocopia del documento acreditativo de identidad o bien por correo electrónico a <a href="mailto:lopd@tir=ant.com">lopd@tirant.com</a>.
+            En virtud de la ley 34/2002 de 11 de Julio de Servicios de la Sociedad de la Información y Correo Electrónico (LSSI-CE),
+            este mensaje y sus archivos adjuntos pueden contener información confidencial, por lo que se informa de que su uso no autorizado
+            está prohibido por la ley. Si ha recibido este mensaje por equivocación, por favor notifíquelo inmediatamente a través de esta misma vía
+            y borre el mensaje original junto con sus ficheros adjuntos sin leerlo o grabarlo total o parcialmente.
+      alert_created_at: Fecha creación alerta
+  login:
+    exceptions:
+      invalid_ips: "Acceso desde IP invalida"
+      invalid_ticket: "Ticket invalido"
+      wrong_password: "Password incorrecta"
+      invalid_user: "Usuario no encontrado"
+      username_required: "Username es requerido"
+      password_required: "Password es requerido"
+      invalid_referer: "Referer incorrecto"
+      user_connections_is_zero: "Numero de conexiones es cero"
+      user_exceed_max_connections: "Numero maximo de conexiones alcanzadas %{max_conexiones}"
+      invalid_gmid: "El usuario no tiene asignado el grupo de materias"
+      user_expired: "Subscripcion caducada"
+      invalid_ticket_auth_external: "Fallo al obtener ticket: external_username o external_email incorrectos"
+      unexpected_error: "Error inesperado"
+      user_not_permissions: "Usuario sin permisos"
+
+  access_error:
+    tipo_error_acceso_id_1: "IP Inválida"
+    tipo_error_acceso_id_2: "Ticket inválido"
+    tipo_error_acceso_id_3: "Password erróneos"
+    tipo_error_acceso_id_4: "Usuario no encontrado"
+    tipo_error_acceso_id_5: "Referer incorrecto"
+    tipo_error_acceso_id_6: "Num.conexiones es cero"
+    tipo_error_acceso_id_7: "Num.maximo conexiones alcanzado"
+    tipo_error_acceso_id_8: "Grupo materias invalido"
+    tipo_error_acceso_id_9: "Subscripción caducada"
+    tipo_error_acceso_id_10: "Ticket autenticación externa"
+    tipo_error_acceso_id_11: "Error inesperado"
+  access_token:
+    email:
+      invalid: "email no es valido"
+  email_common:
+    title: "Claves de acceso a"
+    footer:
+      p1: "ADVERTENCIA LEGAL:"
+      p2: "De conformidad con lo dispuesto en la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal y en la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, le comunicamos que los datos de carácter personal utilizados en este envío están incluidos en el fichero \"CLIENTES-PROVEEDORES\" cuya titularidad ostenta EDITORIAL TIRANT LO BLANCH S.L. puede ejercer sus derechos de acceso, rectificación, cancelación y oposición mediante comunicación escrita a CALLE ARTES GRAFICAS, Nº 14 BAJO, 46010, VALENCIA en la dirección indicada o en el correo electrónico remitente."
+      p3: "Le notificamos que este mensaje va dirigido exclusivamente a la persona designada como destinatario y que la información que contiene es confidencial. Si Vd. ha recibido este mensaje por error le rogamos nos lo comunique mediante correo electrónico remitido a nuestra atención y proceda a su eliminación así como a la de cualquier documento adjunto al mismo, quedando prohibida cualquier divulgación, distribución o copia del mismo."
+      p4: "El consumo de papel es perjudicial para el medio ambiente. Por favor téngalo en cuenta antes de imprimir este mensaje."
+      lopd1: "En cumplimiento de lo dispuesto en el REGLAMENTO (UE) 2016/679 DEL PARLAMENTO EUROPEO Y DEL CONSEJO de 27 de abril de 2016, le informamos de que los datos de contacto utilizados para la presente comunicación serán incluidos en un fichero titularidad de EDITORIAL TIRANT LO BLANCH S.L. con la finalidad de posibilitar las comunicaciones a través del correo electrónico de la misma con los distintos contactos que ésta mantiene dentro del ejercicio de su actividad. Sin perjuicio de ello se le informa de que usted podrá ejercitar los derechos de acceso, rectificación, cancelación y oposición así como los demás derechos que recoge el citado reglamento, para lo cual debe dirigirse a EDITORIAL TIRANT LO BLANCH S.L. situado en C/ ARTES GRÁFICAS, Nº 14 BAJO (46010 VALENCIA) VALENCIA, adjuntando fotocopia del documento acreditativo de identidad o bien por correo electrónico a "
+      lopd2: "En virtud de la ley 34/2002 de 11 de Julio de Servicios de la Sociedad de la Información y Correo Electrónico (LSSI-CE), este mensaje y sus archivos adjuntos pueden contener información confidencial, por lo que se informa de que su uso no autorizado está prohibido por la ley. Si ha recibido este mensaje por equivocación, por favor notifíquelo inmediatamente a través de esta misma vía y borre el mensaje original junto con sus ficheros adjuntos sin leerlo o grabarlo total o parcialmente."
+  email_sub_passwd:
+    p1: "Estimado/a usuario/a:"
+    p2: "A continuación dispone de sus datos de acceso para"
+    p3: "Página de acceso:"
+    p4: "Usuario:"
+    p5: "Acceda al siguiente enlace para actualizar su contraseña y activar su cuenta:"
+    p6: "Este enlace tiene una validez de 24 horas"
+    p7: "Atentamente"
+    p8: "Dpto. Atención al Cliente"
+  email_user_passwd:
+    p1: "Estimado/a usuario/a:"
+    p2: "A continuación dispone de sus datos de acceso para"
+    p3: "Página de acceso:"
+    p4: "Usuario:"
+    p5: "Contraseña:"
+    p7: "Atentamente"
+    p8: "Dpto. Atención al Cliente"
+  email_data_full:
+    p1: "Estimado/a usuario/a:"
+    p2: "Queremos agradecerle su confianza al adquirir nuestra base de datos jurídica"
+    p2_1: "Nuestra voluntad es proporcionarle un servicio excelente y para ello necesitamos confirmar los datos que obran en nuestro poder para que, en caso de detectar alguna anomalía, poder subsanarlos desde el primer momento."
+    p3: "Nombre/Razón social:"
+    p4: "CIF/NIF:"
+    p5: "Persona de contacto:"
+    p6: "Dirección:"
+    p7: "Población:"
+    p8: "Código Postal:"
+    p9: "E-mail:"
+    p10: "Teléfono:"
+    p11: "Fax:"
+    p12: "Producto contratado:"
+    p12_1: "Base de datos Jurídica"
+    p13: "Consultoría"
+    p14: "La clave de acceso que le hemos asignado es la siguiente:"
+    p15: "Usuario:"
+    p16: "(La clave es sensible a mayúsculas y minúsculas)"
+    p17: "Contraseña:"
+    p18: "Para acceder a la base de datos simplemente debe:"
+    p19: "Acceder a través de la página"
+    p20: "Situarse en el apartado de Acceso Usuario."
+    p21: "El sistema les solicitará el usuario y la contraseña que le hemos proporcionado en este mismo correo."
+    p22: "El programa validará la clave y le dará acceso inmediato a la base de datos."
+    p23: "Le recordamos que con esta clave se puede acceder a la base de datos con independencia del ordenador desde el que se esté trabajando."
+    p24: "Le indicamos también su usuario de personalización que le permitirá guardar documentos, índices, búsquedas, formularios y gestionar sus alertas sobre Convenios Colectivos, ayudas y subvenciones. Además recibirá el boletín de novedades semanal."
+    p25: "Por último, le agradeceríamos que nos remitiera un mensaje de acuse de recibo para confirmar la recepción de este mail y, en caso necesario, completar o corregir los datos que le hemos remitido."
+    p26: "Atentamente,"
+    p27: "Dpto. Atención al Cliente"
+    p28: "Correo electrónico:"
+    p29: "Enlace de creación de nueva contraseña"
+    call_for_support: "Ante cualquier problema no dude en ponerse en contacto con nosotros en nuestro teléfono de atención al cliente 902.121.255. Este número está operativo de 8 a 20 horas los 7 días de la semana. De todas formas, en breve, y si no tiene inconveniente, nos pondremos en contacto con usted para confirmar que el funcionamiento de la base de datos es satisfactorio y poder solventarle las dudas de utilización o de cualquier otro tipo que aún pudiera tener."
+    customer_support: "Dpto. Atención al cliente"
+    phone: "Telf."
+    email: "Correo electrónico"
+  email_user_passwd_token:
+    p1: "Acabamos de recibir su solicitud para darse de alta en el servicio de personalización de %{app_name} con esta dirección de correo electrónico."
+    p2: "Para confirmar su petición debe hacer click sobre el siguiente link:"
+    p3: "Si el sistema falla puede copiar el link, pegarlo en la barra de direcciones de su navegador y pulsar intro.
+      Haciendo clic sobre el link anterior, usted nos autoriza a poder guardar su dirección de correo en nuestra base de datos."
+    p4: "Esta es la dirección que utilizaremos para remitirle nuestro boletín semanal de novedades y al que usted podrá remitir de forma automática toda la documentación que desee desde la página de %{app_name}."
+  email_user_share_document:
+    subject: "Documento %s Compartido por %s"
+    link_info: "Pulse en el siguiente link para descargar el documento compartido. El link tiene una vigencia de 72 horas. Transcurrido este tiempo no será válido. Este link descarga el documento actual y no se verá afectado por futuras actualizaciones."
+  materia:
+    esp:
+      '1': "Laboral"
+      '2': "P.Horizontal y arrendamientos"
+      '3': "Financiero y Tributario"
+      '4': "Contabilidad y auditoría"
+      '5': "Mercantil"
+      '6': "Extranjería"
+      '7': "Separación y Divorcio"
+      '8': "Urbanismo y edificación"
+      '9': "Concursal"
+      '10': "Ejecución penal y penitenciaria"
+      '13': "Zona Notarial"
+      '14': "Laboral y gestión de personal"
+      '16': "Dirección económico-financiera"
+      '17': "Dirección de producción"
+      '18': "Marketing y comunicación"
+      '19': "Jurídico"
+      '21': "Penal"
+      '22': "Contratos"
+      '23': "Universidad"
+      '24': "Arrendamientos urbanos"
+      '25': "Propiedad Horizontal"
+      '26': "Derecho de Familia"
+      '27': "Tráfico e indemnizaciones"
+
+  user_presubscription:
+    errors:
+      perusuid:
+        exists: "%{email} ya está dado de alta en personalización"
+        many_exist: "Los siguientes emails ya están dados de alta en personalización: "
+        password_blanks: "La contraseña no puede contener caracteres en blanco."
+  errors: &errors
+    format:  '%{attribute} %{message}'
+    messages:
+      accepted: debe ser aceptado
+      blank: no puede estar en blanco
+      present: debe estar en blanco
+      confirmation: no coincide
+      empty: no puede estar vacío
+      equal_to: debe ser igual a %{count}
+      even: debe ser par
+      exclusion: está reservado
+      greater_than: debe ser mayor que %{count}
+      greater_than_or_equal_to: debe ser mayor que o igual a %{count}
+      inclusion: no está incluido en la lista
+      invalid: no es válido
+      less_than: debe ser menor que %{count}
+      less_than_or_equal_to: debe ser menor que o igual a %{count}
+      model_invalid: "La validación falló: %{errors}"
+      not_a_number: no es un número
+      not_an_integer: debe ser un entero
+      odd: debe ser impar
+      required: debe existir
+      taken: ya está en uso
+      too_long:
+        one: "es demasiado largo (1 carácter máximo)"
+        other: "es demasiado largo (%{count} caracteres máximo)"
+      too_short:
+        one: "es demasiado corto (1 carácter mínimo)"
+        other: "es demasiado corto (%{count} caracteres mínimo)"
+      wrong_length:
+        one: "no tiene la longitud correcta (1 carácter exactos)"
+        other: "no tiene la longitud correcta (%{count} caracteres exactos)"
+      other_than: debe ser distinto de %{count}
+      validations:
+        message: Errors de Validación sobre %{document}
+        summary: "Errores:\n    %{errors}"
+        resolution: Check the instances for this model looking for missing fields or wrong values.
+  activemodel:
+    errors:
+      <<: *errors
+  mongoid:
+    errors:
+      <<: *errors
+      models:
+        latam/user_subscription_search:
+            attributes:
+              user_subscription_case_id:
+                blank: 'debe ser seleccionado'
+    attributes:
+      esp/user_subscription_assumption:
+        title: "Título"
+        user_subscription_case_id: "Caso"
+      latam/user_subscription_search:
+        summary: 'Descripción'
+        user_subscription_case_id: 'Expediente'
+  activerecord:
+    attributes:
+      esp/user_subscription:
+        perusuid: 'email'
+      mex/user_subscription:
+        perusuid: 'email'
+      latam/user_subscription:
+        perusuid: 'email'
+    errors:
+      messages:
+        record_invalid: "Errores de validación: %{errors}"
+  user_subscription_login:
+    errors:
+      desactivado: "Este Usuario ha sido desactivado"
+      invalid: "Usuario o password incorrecto"
+      invalid_session: "La session es invalida"
+  user_subscription_calendars:
+    errors:
+      last_calendar: 'No se permite eliminar el único calendario que tienes,
+      debes crear otro calendario antes de poder borrar este.'
+  user_ip:
+    errors:
+      format: 'Los campos de una misma ip deben tener el mismo formato (ipv4 or ipv6)'
+
+  canaltirant:
+    editorial: Editorial Tirant
+    derecho: Libreria jurídica
+    libreria: Libreria Tirant
+    humanidades: Tirant Humanidades
+    libmex: Tirant México
+    tol: Tirant Online
+    formacion: Tirant Formación
+    tase: Tirant Asesores
+    emp: Tirant Empresas
+    tnr: Tirant Notarios
+    immobiliario: Tirant PH
+    biblioteca: Biblioteca Virtual
+    corporativa: Tirant Corporativa
+    nubedelectura: Nube de Lectura
+    tph: Tirant P. Horizontal
+    tolmex: Tirant Online México
+    conmex: Tirant Contadores
+    latam: Tirant Online Latam
+    analytics: Tirant Analytics
+    teoriayderecho: Teoría y Derecho
+    formacionmexico: Formación México
+    formacionbrasil: Formación Brasil
+    bvbrasil: Biblioteca Virtual Brasil
+    libchl: Tirant Chile
+    libcol: Tirant Colombia
+    compliancers: Tirant Compliancers
+    libbra: Tirant Brasil
+    col: Tirant Online Colombia
+    chl: Tirant Online Chile
+    per: Tirant Online Perú

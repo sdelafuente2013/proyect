@@ -1,0 +1,5 @@
+ca:
+  controllers:
+    users_subscriptions:
+      invalid_token: "L'enllaç de recuperació de contrasenya no és vàlid. Torna a fer la sol·licitud de canvi de contrasenya."
+      invalid_toke_confirmation: "L'enllaç de confirmació no és vàlid"

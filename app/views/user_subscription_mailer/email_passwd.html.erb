@@ -1,0 +1,13 @@
+<p style="margin-bottom: 0cm">
+
+  <p><%= I18n.t("email_sub_passwd.p1") %></p>
+  <p><%= I18n.t("email_sub_passwd.p2") %></p> <%= @subsystem.name %>:</p>
+  <p><%= I18n.t("email_sub_passwd.p3") %> <a href="<%=@subsystem.url%>"><%= @subsystem.url %></a></p>
+  <p><%= I18n.t("email_sub_passwd.p4") %> <strong><%= @user_subscription.perusuid %></strong></p>
+  <p><%= I18n.t("email_sub_passwd.p5") %> 
+  <p><%= link_to nil, params[:change_password_url] %></p>
+  <p><%= I18n.t("email_sub_passwd.p6") %> 
+
+
+  <p><%= I18n.t("email_sub_passwd.p7") %>,<br><%= I18n.t("email_sub_passwd.p8") %></p>
+</p>

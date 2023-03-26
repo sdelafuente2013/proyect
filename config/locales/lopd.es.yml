@@ -1,0 +1,23 @@
+es:
+  lopd:
+    top:
+      - "Conforme al Reglamento (UE) 2016/679 y a la Ley Orgánica 3/2018, de 5 de diciembre
+        de Protección de Datos Personales y garantía de los derechos digitales,
+        le informamos de que sus datos personales pasarán a formar parte de un fichero denominado
+        CLIENTES Y/O PROVEEDORES titularidad de EDITORIAL TIRANT LO BLANCH S.L. con CIF B46091179."
+      - "Los datos se recogen con la finalidad de gestionar adecuadamente la información de los clientes y/o proveedores contable,
+        fiscal y administrativamente así como la publicidad y prospección comercial. Estos se conservarán mientras
+        no se solicite la supresión por el interesado y podrán ser cedidos y/o comunicados a colaboradores/terceros
+        con el fin de resolver y cubrir sus necesidades, así como para ofrecerles servicios relacionados, publicidad y
+        prospección comercial."
+    bottom:
+      - "A su vez le informamos de que en cualquier momento puede ejercer sus derechos de acceso, rectificación, supresión, portabilidad,
+        limitación u oposición al tratamiento de sus datos, así como retirar el consentimiento prestado o formular reclamaciones
+        ante la Autoridad de Control. Dichas acciones podrán ejercerse enviando la solitud por correo postal a
+        C/ ARTES GRÁFICAS, Nº 14 BAJO (46010 VALENCIA) o bien a la siguiente dirección de correo electrónico
+        <a href='mailto:dpo@tirant.com?subject=Protección de datos'>dpo@tirant.com</a> bajo el asunto de referencia
+        \"<a href='mailto:dpo@tirant.com?subject=Protección de datos'>Protección de Datos</a>\"."
+    actions:
+      main: "Yo, por la presente entiendo y doy mi consentimiento de que pueda tratar mis datos personales."
+      commercial: "Yo, por la presente doy mi consentimiento para el envío de información y/o publicidad."
+      personal_data: "Yo, entiendo y acepto la cesión y/o comunicación de mis datos a colaboradores/terceros en los términos establecidos en la presente cláusula."
